@@ -4,7 +4,7 @@ Wyświetlanie cen kryptowalut w pasku status dla bumblebee-status
 ## instalacja
 Uruchomienie skryptu jako usługa systemowa:
 
-Utwórz plik usługi w katalogu /etc/systemd/system/ 
+Utwórz plik usługi 
 `
 sudo nano /etc/systemd/system/crypto_status.service
 `
