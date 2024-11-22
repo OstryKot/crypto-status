@@ -1,6 +1,8 @@
 # crypto-status
 Wyświetlanie cen kryptowalut za pomocą modułu ***crypto_status.py*** w pasku statusu dla **bumblebee-status version 2.2.0**. Odczyt cen krytowalut z Binance za pomocą skryptu ***crypto_price.py*** uruchomionego jako usługa systemowa.
 
+- [instalacja modułu](#instalacjamodułu) 
+
 ## instalacja
 ### instalacja bumblebee-status dla Debian 12:
 
@@ -36,6 +38,7 @@ Aktywacja usługi `sudo systemctl enable crypto_status.service` następnie uruch
 `sudo systemctl start crypto_status.service`
 
 ### instalacja modułu
+(#instalacjamodułu)
 
 Wgranie modułu `crypto_price.py` do bumblebee-status. Plik umieścić w katalogu z modułami.
 `/home/pc/.local/lib/python3.11/site-packages/bumblebee_status/modules/contrib`
