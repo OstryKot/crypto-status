@@ -1,5 +1,5 @@
 # crypto-status
-Wyświetlanie cen kryptowalut w pasku status dla bumblebee-status 2.2.0
+Wyświetlanie cen kryptowalut w pasku status dla bumblebee-status version 2.2.0
 
 ## instalacja
 Uruchomienie skryptu jako usługa systemowa:
