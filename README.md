@@ -8,7 +8,7 @@ sudo nano /etc/systemd/system/crypto_status.service
 ```
 
 Wpisz następującą konfigurację do pliku:
-
+```
 [Unit]
 Description=My Python Script
 After=network.target
@@ -23,13 +23,17 @@ User=your_username
 
 [Install]
 WantedBy=multi-user.target
+```
 
 Zastąp your_username swoją nazwą użytkownika i /home/your_username/crypto_status.py ścieżką do swojego skryptu.
 
 Aktywacja usługi oraz uruchomienie:
-
+```
 sudo systemctl enable crypto_status.service
+```
+```
 sudo systemctl start crypto_status.service
+```
 
 Wgranie modułu crypto_price.py do bumblebee-status:
 plik umieścić w katalogu z modułami np.:
@@ -38,7 +42,7 @@ plik umieścić w katalogu z modułami np.:
 
 Konfiguracja w pliku config dla i3wm np.:
 w pliku config w sekcji bar dodać wpis modułu "-m crypto_price"
-
+```
 bar{
         font pango: Hack Nerd Font 7
         output DP-4
@@ -46,4 +50,4 @@ bar{
 
         status_command /usr/bin/bumblebee-status -m crypto_price git traffic nic publicip uptime time -p nic.exclude=lo -p traffic.exclude -p configfile=~/.config/bumblebee-status/bumblebee_status.toml -t iceberg-dark-powerline 
 }
-
+```
