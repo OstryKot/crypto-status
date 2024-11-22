@@ -4,10 +4,7 @@ Wyświetlanie cen kryptowalut w pasku status dla bumblebee-status
 ## instalacja
 Uruchomienie skryptu jako usługa systemowa:
 
-Utwórz plik usługi 
-`
-sudo nano /etc/systemd/system/crypto_status.service
-`
+Utwórz plik usługi `sudo nano /etc/systemd/system/crypto_status.service`
 
 Wpisz następującą konfigurację do pliku:
 ```
@@ -29,24 +26,15 @@ WantedBy=multi-user.target
 
 Zastąp `your_username` swoją nazwą użytkownika i `/home/your_username/crypto_status.py` ścieżką do swojego skryptu.
 
-Aktywacja usługi 
-`
-sudo systemctl enable crypto_status.service
-`
-następnie uruchomienie usługi 
-`
-sudo systemctl start crypto_status.service
-`
+Aktywacja usługi `sudo systemctl enable crypto_status.service` następnie uruchomienie usługi 
+`sudo systemctl start crypto_status.service`
 
-Wgranie modułu crypto_price.py do bumblebee-status:
+Wgranie modułu `crypto_price.py` do bumblebee-status:
 plik umieścić w katalogu z modułami np.:
-
-`
-/home/pc/.local/lib/python3.11/site-packages/bumblebee_status/modules/contrib
-`
+`/home/pc/.local/lib/python3.11/site-packages/bumblebee_status/modules/contrib`
 
 Konfiguracja w pliku config dla i3wm np.:
-w pliku config w sekcji bar dodać wpis modułu "-m crypto_price"
+w pliku `config` w sekcji bar dodać wpis modułu `"-m crypto_price"`
 ```
 bar{
         font pango: Hack Nerd Font 7
