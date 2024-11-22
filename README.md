@@ -2,13 +2,13 @@
 Wyświetlanie cen kryptowalut w pasku status dla bumblebee-status version 2.2.0
 
 ## instalacja
-###Instalacja bumblebee-status dla Debian 12:
+### instalacja bumblebee-status dla Debian 12:
 
 `pip install bumblebee-status --break-system-packages`
 aktualizacja
 `pip install --upgrade bumblebee-status --break-system-packages`
 
-###Uruchomienie skryptu jako usługa systemowa:
+### uruchomienie skryptu jako usługa systemowa:
 
 Utwórz plik usługi `sudo nano /etc/systemd/system/crypto_status.service`
 
@@ -35,13 +35,13 @@ Zastąp `your_username` swoją nazwą użytkownika i `/home/your_username/crypto
 Aktywacja usługi `sudo systemctl enable crypto_status.service` następnie uruchomienie usługi 
 `sudo systemctl start crypto_status.service`
 
-###Instalacja modułu
+### instalacja modułu
 
 Wgranie modułu `crypto_price.py` do bumblebee-status:
 plik umieścić w katalogu z modułami np.:
 `/home/pc/.local/lib/python3.11/site-packages/bumblebee_status/modules/contrib`
 
-###Konfiguracja w pliku config dla i3wm
+### konfiguracja w pliku config dla i3wm
 
 Przykład konfiguracji w pliku `config` w sekcji bar dodać wpis modułu `"-m crypto_price"`
 ```
