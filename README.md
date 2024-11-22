@@ -33,7 +33,7 @@ Aktywacja usługi
 `
 sudo systemctl enable crypto_status.service
 `
-Uruchomienie usługi 
+następnie uruchomienie usługi 
 `
 sudo systemctl start crypto_status.service
 `
@@ -41,7 +41,9 @@ sudo systemctl start crypto_status.service
 Wgranie modułu crypto_price.py do bumblebee-status:
 plik umieścić w katalogu z modułami np.:
 
+`
 /home/pc/.local/lib/python3.11/site-packages/bumblebee_status/modules/contrib
+`
 
 Konfiguracja w pliku config dla i3wm np.:
 w pliku config w sekcji bar dodać wpis modułu "-m crypto_price"
