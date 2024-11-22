@@ -2,6 +2,11 @@
 Wyświetlanie cen kryptowalut w pasku status dla bumblebee-status version 2.2.0
 
 ## instalacja
+Instalacja bumblebee-status dla Debian 12:
+`pip install bumblebee-status --break-system-packages`
+aktualizacja
+`pip install --upgrade bumblebee-status --break-system-packages`
+
 Uruchomienie skryptu jako usługa systemowa:
 
 Utwórz plik usługi `sudo nano /etc/systemd/system/crypto_status.service`
