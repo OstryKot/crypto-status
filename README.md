@@ -29,13 +29,14 @@ WantedBy=multi-user.target
 
 Zastąp your_username swoją nazwą użytkownika i /home/your_username/crypto_status.py ścieżką do swojego skryptu.
 
-Aktywacja usługi oraz uruchomienie:
-```
+Aktywacja usługi 
+`
 sudo systemctl enable crypto_status.service
-```
-```
+`
+Uruchomienie usługi 
+`
 sudo systemctl start crypto_status.service
-```
+`
 
 Wgranie modułu crypto_price.py do bumblebee-status:
 plik umieścić w katalogu z modułami np.:
