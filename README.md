@@ -27,7 +27,7 @@ User=your_username
 WantedBy=multi-user.target
 ```
 
-Zastąp your_username swoją nazwą użytkownika i /home/your_username/crypto_status.py ścieżką do swojego skryptu.
+Zastąp `your_username` swoją nazwą użytkownika i `/home/your_username/crypto_status.py` ścieżką do swojego skryptu.
 
 Aktywacja usługi 
 `
