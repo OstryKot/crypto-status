@@ -1,5 +1,6 @@
 # crypto-status
 Wyświetlanie cen kryptowalut w pasku status dla bumblebee-status version 2.2.0
+Moduł do bumblebee-status oraz skrypt odczytujący z Binance ceny kryptowalut do uruchomienia jako usługa systemowa.
 
 ## instalacja
 ### instalacja bumblebee-status dla Debian 12:
